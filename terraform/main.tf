@@ -1,6 +1,7 @@
 resource "vercel_project" "lab_deployment" {
   name      = "lab6-terraform-final"
   framework = "vite"
+  root_directory = "my-app"
   git_repository = {
     type = "github"
     repo = "Ira-name/lab-1-setup"
